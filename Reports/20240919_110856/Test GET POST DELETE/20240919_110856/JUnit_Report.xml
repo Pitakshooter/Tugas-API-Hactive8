@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test GET POST DELETE" time="6.055" tests="6" failures="0" errors="0">
+   <testsuite name="Test GET POST DELETE" tests="6" failures="0" errors="0" time="6.055" skipped="0" timestamp="19-09-2024T11:09:02" hostname="User - PIHC5586" id="Test Suites/Test GET POST DELETE">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\User\\Katalon Studio\\Tugas Automatian API Muhammad Delta\\Reports\\20240919_110856\\Test GET POST DELETE\\20240919_110856"/>
+         <property name="logFiles" value="C:\\Users\\User\\Katalon Studio\\Tugas Automatian API Muhammad Delta\\Reports\\20240919_110856\\Test GET POST DELETE\\20240919_110856\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="User - PIHC5586"/>
+         <property name="hostAddress" value="10.24.0.195"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/Get user by id" time="3.521" classname="Test Cases/Get user by id" status="PASSED">
+         <system-out><![CDATA[19-09-2024T11:09:03 - [TEST_CASE][PASSED] - Test Cases/Get user by id: Test Cases/Get user by id
+
+19-09-2024T11:09:03 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Get user by id", ["id":"2"])): Send request successfully
+
+19-09-2024T11:09:06 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\Tugas Automatian API Muhammad Delta\Reports\20240919_110856\Test GET POST DELETE\20240919_110856\requests\main\0.har
+
+19-09-2024T11:09:06 - [MESSAGE][PASSED] - Send request successfully
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - id = id: null
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - assert id != null: null
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - assert id == [2]: null
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+19-09-2024T11:09:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - verifyMatch("Ervin Howell", "Ervin Howell", false): Actual text 'Ervin Howell' and expected text 'Ervin Howell' are matched 
+
+19-09-2024T11:09:06 - [MESSAGE][PASSED] - Actual text 'Ervin Howell' and expected text 'Ervin Howell' are matched]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Get all user" time="0.243" classname="Test Cases/Get all user" status="PASSED">
+         <system-out><![CDATA[19-09-2024T11:09:06 - [TEST_CASE][PASSED] - Test Cases/Get all user: Test Cases/Get all user
+
+19-09-2024T11:09:06 - [TEST_STEP][PASSED] - sendRequest(findTestObject("Get all user")): Send request successfully
+
+19-09-2024T11:09:06 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\Tugas Automatian API Muhammad Delta\Reports\20240919_110856\Test GET POST DELETE\20240919_110856\requests\main\1.har
+
+19-09-2024T11:09:06 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Delete User" time="0.602" classname="Test Cases/Delete User" status="PASSED">
+         <system-out><![CDATA[19-09-2024T11:09:06 - [TEST_CASE][PASSED] - Test Cases/Delete User: Test Cases/Delete User
+
+19-09-2024T11:09:07 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Delete User")): Send request successfully
+
+19-09-2024T11:09:07 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\Tugas Automatian API Muhammad Delta\Reports\20240919_110856\Test GET POST DELETE\20240919_110856\requests\main\2.har
+
+19-09-2024T11:09:07 - [MESSAGE][PASSED] - Send request successfully
+
+19-09-2024T11:09:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+19-09-2024T11:09:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+19-09-2024T11:09:07 - [TEST_STEP][PASSED] - verifyResponseStatusCodeInRange(response, 200, 202): Verify response status code successfully
+
+19-09-2024T11:09:07 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Delete Comments" time="0.449" classname="Test Cases/Delete Comments" status="PASSED">
+         <system-out><![CDATA[19-09-2024T11:09:07 - [TEST_CASE][PASSED] - Test Cases/Delete Comments: Test Cases/Delete Comments
+
+19-09-2024T11:09:07 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Delete Comments")): Send request successfully
+
+19-09-2024T11:09:07 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\Tugas Automatian API Muhammad Delta\Reports\20240919_110856\Test GET POST DELETE\20240919_110856\requests\main\3.har
+
+19-09-2024T11:09:07 - [MESSAGE][PASSED] - Send request successfully
+
+19-09-2024T11:09:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+19-09-2024T11:09:07 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create new post" time="0.475" classname="Test Cases/Create new post" status="PASSED">
+         <system-out><![CDATA[19-09-2024T11:09:07 - [TEST_CASE][PASSED] - Test Cases/Create new post: Test Cases/Create new post
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Create new post")): Send request successfully
+
+19-09-2024T11:09:08 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\Tugas Automatian API Muhammad Delta\Reports\20240919_110856\Test GET POST DELETE\20240919_110856\requests\main\4.har
+
+19-09-2024T11:09:08 - [MESSAGE][PASSED] - Send request successfully
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - verifyMatch("Yaantoso", "Yaantoso", false): Actual text 'Yaantoso' and expected text 'Yaantoso' are matched 
+
+19-09-2024T11:09:08 - [MESSAGE][PASSED] - Actual text 'Yaantoso' and expected text 'Yaantoso' are matched 
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - id = id: null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - assert id != null: null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - assert id == 101: null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+19-09-2024T11:09:08 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Create new Albums" time="0.485" classname="Test Cases/Create new Albums" status="PASSED">
+         <system-out><![CDATA[19-09-2024T11:09:08 - [TEST_CASE][PASSED] - Test Cases/Create new Albums: Test Cases/Create new Albums
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Create new albums")): Send request successfully
+
+19-09-2024T11:09:08 - [MESSAGE][INFO] - HAR: C:\Users\User\Katalon Studio\Tugas Automatian API Muhammad Delta\Reports\20240919_110856\Test GET POST DELETE\20240919_110856\requests\main\5.har
+
+19-09-2024T11:09:08 - [MESSAGE][PASSED] - Send request successfully
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - verifyMatch("Hidup Seperti Larry", "Hidup Seperti Larry", false): Actual text 'Hidup Seperti Larry' and expected text 'Hidup Seperti Larry' are matched 
+
+19-09-2024T11:09:08 - [MESSAGE][PASSED] - Actual text 'Hidup Seperti Larry' and expected text 'Hidup Seperti Larry' are matched 
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - id = id: null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - assert id != null: null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - assert id == 101: null
+
+19-09-2024T11:09:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+19-09-2024T11:09:08 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[19-09-2024T11:09:02 - [TEST_SUITE][PASSED] - Test GET POST DELETE: Test Cases/Create new Albums]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
