@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test GET POST DELETE,,,,19-09-2024 11:09:02,19-09-2024 11:09:08,6.055s,PASSED
+,,,,,,,
+Test Cases/Get user by id,,,,19-09-2024 11:09:03,19-09-2024 11:09:06,3.521s,PASSED
+"response = sendRequest(findTestObject(""Get user by id"", [""id"":""2""]))",,,,19-09-2024 11:09:03,19-09-2024 11:09:06,2.841s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.024s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.046s,PASSED
+id = id,,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.023s,PASSED
+assert id != null,,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.006s,PASSED
+assert id == [2],,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.003s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.043s,PASSED
+"verifyMatch(""Ervin Howell"", ""Ervin Howell"", false)",,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.065s,PASSED
+,,,,,,,
+Test Cases/Get all user,,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.243s,PASSED
+"sendRequest(findTestObject(""Get all user""))",,,,19-09-2024 11:09:06,19-09-2024 11:09:06,0.099s,PASSED
+,,,,,,,
+Test Cases/Delete User,,,,19-09-2024 11:09:06,19-09-2024 11:09:07,0.602s,PASSED
+"response = sendRequest(findTestObject(""Delete User""))",,,,19-09-2024 11:09:07,19-09-2024 11:09:07,0.428s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,19-09-2024 11:09:07,19-09-2024 11:09:07,0.006s,PASSED
+"verifyResponseStatusCodeInRange(response, 200, 202)",,,,19-09-2024 11:09:07,19-09-2024 11:09:07,0.021s,PASSED
+,,,,,,,
+Test Cases/Delete Comments,,,,19-09-2024 11:09:07,19-09-2024 11:09:07,0.449s,PASSED
+"response = sendRequest(findTestObject(""Delete Comments""))",,,,19-09-2024 11:09:07,19-09-2024 11:09:07,0.319s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,19-09-2024 11:09:07,19-09-2024 11:09:07,0.004s,PASSED
+,,,,,,,
+Test Cases/Create new post,,,,19-09-2024 11:09:07,19-09-2024 11:09:08,0.475s,PASSED
+"response = sendRequest(findTestObject(""Create new post""))",,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.330s,PASSED
+"verifyMatch(""Yaantoso"", ""Yaantoso"", false)",,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.006s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+id = id,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+assert id != null,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+assert id == 101,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.003s,PASSED
+,,,,,,,
+Test Cases/Create new Albums,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.485s,PASSED
+"response = sendRequest(findTestObject(""Create new albums""))",,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.313s,PASSED
+"verifyMatch(""Hidup Seperti Larry"", ""Hidup Seperti Larry"", false)",,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.023s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.003s,PASSED
+id = id,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+assert id != null,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.002s,PASSED
+assert id == 101,,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.003s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,19-09-2024 11:09:08,19-09-2024 11:09:08,0.004s,PASSED
